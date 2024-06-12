@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Firstname Lastname",
-    "label": "Develpoer",
-    "email": "example.com",
-    "phone": "+123 45 6789",
-    "website": "example.com",
-    "summary": "Aspiring new talent finding example jobs",
-    "location": "In somewhere",
+    "name": "Jelani Alexander",
+    "label": "Cloud Engineer",
+    "email": "jelanialexander82@gmail.com",
+    "phone": "+81 090 99050 0692",
+    "website": "jelanialex.cloud.eng.com",
+    "summary": "Aspiring Cloud Engineer looking for new opportunities to learn and grow in the field ",
+    "location": "Aichi, Japan",
     "profiles": [{
       "network": "linkedin",
       "username": "example",
@@ -39,7 +39,8 @@
     "keywords": [
       "Python",
       "CPlusPlus",
-      "C"
+      "C",
+      "AWS Cloud Practioner Certification"
     ]
   }],
   "languages": [{

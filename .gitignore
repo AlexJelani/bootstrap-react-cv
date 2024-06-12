@@ -27,3 +27,7 @@ Dockerfile
 .dockerignore
 package-lock.json
 yarn.lock
+/.idea/.gitignore
+/.idea/cody_history.xml
+/.idea/modules.xml
+/.idea/vcs.xml

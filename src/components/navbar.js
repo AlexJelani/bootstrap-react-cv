@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import kuva from '../assets/img/profile.jpg';
+import jelani from '../assets/img/jelaniprofilepic.jpeg'
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import {Navbar,Nav} from 'react-bootstrap'
 import {Container,Row,Col} from 'react-bootstrap';
@@ -43,7 +43,7 @@ class Navigate extends Component {
         />
             <a className="navbar-brand" onClick={() => scroll.scrollToTop()}>
             <span className="d-none d-lg-block">
-                <img className="img-fluid img-profile rounded-circle mx-auto mb-2" style={{cursor:"pointer"}} src={kuva} alt=""/>
+                <img className="img-fluid img-profile rounded-circle mx-auto mb-2" style={{cursor:"pointer"}} src={jelani} alt=""/>
               </span>
               </a>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
