@@ -150,14 +150,14 @@ class Skill extends Component {
     <Container className="middle" style={{ paddingLeft: 0}} >
     <Row className="mb-4 justify-content-md-left">
     {perSkill.keywords.map((icon,index) =>
-      <Col  className="text-center" xs={3} >
+      <Col  className="text-center mx-3" xs={3} >
       <FontAwesomeIcon className={"hovering icon-size"} icon={{prefix: 'fab',iconName: (icon.split(" ")[0]).toLowerCase()}} />
       </Col>
     )}
     </Row>
     <Row className="mb-4 justify-content-md-left">
     {perSkill.keywords.map((name,index) =>
-      <Col className="text-center" xs={3} >
+      <Col className="text-center mx-3" xs={3} >
       <p >{name}</p>
       </Col>
     )}
