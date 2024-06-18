@@ -8,6 +8,8 @@ import {Container,Row,Col} from 'react-bootstrap';
 import '../assets/css/allcss.css';
 import {CPlusPlus,C,Photoshop,JavaScript,Kubernetes} from './icons.js'
 import Navigate from './navbar.js'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 library.add(fab,CPlusPlus,C,Photoshop,JavaScript,Kubernetes);
 FontAwesomeIcon.defaultPrefix = "fab";
@@ -55,38 +57,62 @@ class Experience extends Component {
     const experiences = this.props.data.work;
     const allExperiences = experiences.map((oneJob, index) =>
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div className="resume-content">
-        <h3 className="mb-0">{oneJob.position}</h3>
-        <div className="subheading mb-3">
-        <a href={oneJob.website}>{oneJob.company}</a> 
+        <div className="resume-content">
+            <h3 className="mb-0">{oneJob.position}</h3>
+            <div className="subheading mb-3">
+                <a href={oneJob.website}>{oneJob.company}</a>
+            </div>
+            <ul style={{color: 'black'}}>
+                {oneJob.viewLive &&
+                    <li>
+                        <a href={oneJob.viewLive.url} target="_blank" rel="noopener noreferrer">
+                            {oneJob.viewLive.title} <FontAwesomeIcon icon={faExternalLinkAlt}/>
+                        </a>
+                    </li>
+                }
+                <li>{oneJob.summary}</li>
+                {oneJob.project &&
+                    <li>
+                        <a href={oneJob.project.url} target="_blank" rel="noopener noreferrer">
+                            {oneJob.project.title} <FontAwesomeIcon icon={faExternalLinkAlt}/>
+                        </a>
+                    </li>
+                }
+                {oneJob.blog &&
+                    <li>
+                        <a href={oneJob.blog.url} target="_blank" rel="noopener noreferrer">
+                            {oneJob.blog.title} <FontAwesomeIcon icon={faExternalLinkAlt}/>
+                        </a>
+                    </li>
+                }
+            </ul>
         </div>
-        <p>{oneJob.summary}</p>
-      </div>
-      <div className="resume-date text-md-right">
-      <span className="text-primary">{oneJob.startDate} - {oneJob.endDate}</span>
-      </div>
+        <div className="resume-date text-md-right">
+            <span className="text-primary">{oneJob.startDate} - {oneJob.endDate}</span>
+        </div>
     </div>
     );
 
-    return (allExperiences);
-  
+      return (allExperiences);
+
+  }
 }
-}
+
 class Education extends Component {
-  render() {
-    const educations = this.props.data.education;
-    const allEducations = educations.map((oneEdu, index) =>
-      <div key={index} className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div className="resume-content">
-          <h3 className="mb-0">{oneEdu.institution}</h3>
-          <div className="subheading mb-3 colorized">{oneEdu.studyType}</div>
-          <div>{oneEdu.area}</div>
-          <div >{oneEdu.info}</div>
-        </div>
-        <div className="resume-date text-md-right">
-          <span className="text-primary">{oneEdu.startDate} - {oneEdu.endDate}</span>
-        </div>
-      </div>
+    render() {
+        const educations = this.props.data.education;
+        const allEducations = educations.map((oneEdu, index) =>
+            <div key={index} className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div className="resume-content">
+                    <h3 className="mb-0">{oneEdu.institution}</h3>
+                    <div className="subheading mb-3 colorized">{oneEdu.studyType}</div>
+                    <div style={{color:"black"}}>{oneEdu.area}</div>
+                    <div style={{color:"black"}}>{oneEdu.info}</div>
+                </div>
+                <div className="resume-date text-md-right">
+                    <span className="text-primary">{oneEdu.startDate} - {oneEdu.endDate}</span>
+                </div>
+            </div>
     );
 
     return (allEducations);
@@ -170,15 +196,15 @@ class TheCv extends Component {
           "education",
           "skills",
           "interests",
-          "aboutsite"
+          "blog"
       ],
       list_of_titles_fin : [
-        "perustiedot",
-        "työkokemus",
-        "koulutus",
-        "taidot",
-        "mielenkiinnon kohteet",
-        "tietojasivusta"
+        "自己紹介",
+        "経験",
+        "学歴",
+        "スキル ",
+        "興味",
+        "ブログ"
     ]
     };
   }
@@ -238,7 +264,7 @@ class TheCv extends Component {
 
   <hr className="m-0"/>
 
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="aboutsite">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="blog">
       <div className="w-100">
       <h2 className="mb-5">{this.state.isEng ? this.state.list_of_titles_fin[5] : this.state.list_of_titles_eng[5]}</h2>
       <AboutSite />

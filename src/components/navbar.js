@@ -15,7 +15,7 @@ class Navigate extends Component {
                 "education",
                 "skills",
                 "interests",
-                "aboutsite"
+                "blog"
             ],
             
         };
@@ -33,7 +33,7 @@ class Navigate extends Component {
         <BootstrapSwitchButton
         checked={false}
         onlabel='Eng'
-        offlabel='Fin'
+        offlabel='JP'
         checked={true}
         size="lg"
         onstyle="dark" offstyle="light"
