@@ -41,16 +41,17 @@ class Navigate extends Component {
           this.props.handleSwitch()
         }}
         />
-            <a className="navbar-brand" onClick={() => scroll.scrollToTop()}>
-            <span className="d-none d-lg-block">
-                <img className="img-fluid img-profile rounded-circle mx-auto mb-2" style={{cursor:"pointer"}} src={jelani} alt=""/>
-              </span>
-              </a>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-          {titles}
-         </Nav>
+              <button className="navbar-brand" onClick={() => scroll.scrollToTop()} style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="d-none d-lg-block">
+                        <img className="img-fluid img-profile rounded-circle mx-auto mb-2" style={{cursor: "pointer"}}
+                             src={jelani} alt=""/>
+                    </span>
+              </button>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+              <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="mr-auto">
+                      {titles}
+                  </Nav>
           </Navbar.Collapse>
           </Navbar>
             
