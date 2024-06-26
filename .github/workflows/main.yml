@@ -8,10 +8,10 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      BUCKET: <bucket-name>
+      BUCKET: www.alexanderjelani.cloud
       DIST: build
       REGION: us-east-1
-      DIST_ID: <ID>
+      DIST_ID: EK3HQQLKG4JXH
 
     steps:
     - name: Checkout
