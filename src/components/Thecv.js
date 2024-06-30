@@ -9,6 +9,8 @@ import '../assets/css/allcss.css';
 import {CPlusPlus,C,Photoshop,JavaScript,Kubernetes} from './icons.js'
 import Navigate from './navbar.js'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import awsBadge from '../assets/img/aws-certified-cloud-practitioner.png'; // Adjust the path based on your project structure
+
 
 
 library.add(fab,CPlusPlus,C,Photoshop,JavaScript,Kubernetes);
@@ -35,27 +37,36 @@ class Basics extends Component {
 
       return(
       <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div className="w-100">
-      <h1 className="mb-0">{basics.name.split(" ")[0]}
-        <span className="text-primary"> {basics.name.split(" ")[1]}</span>
-      </h1>
-      <div className="subheading mb-5"> {basics.label} · {basics.location} · {basics.phone} ·
-        <a href={`mailto:${basics.email}`}> {basics.email}</a>
-      </div>
-      <p className="lead mb-5"> {basics.summary}</p>
-      <div className="social-icons">
-        {allSocial}
-      </div>
-    </div>
-  </section>
+          <div className="w-100">
+              <h1 className="mb-0">{basics.name.split(" ")[0]}
+                  <span className="text-primary"> {basics.name.split(" ")[1]}</span>
+              </h1>
+              <div className="subheading mb-2"> {basics.label} · {basics.location} · {basics.phone} ·
+                  <a href={`mailto:${basics.email}`}> {basics.email}</a>
+              </div>
+              {/* AWS Badge */}
+              <img src={awsBadge} alt="AWS Certified Badge" width="120" height="120"/>
+              {/*<img src={awsBadge} alt="AWS Certified Badge" width="120" height="120"/>*/}
+              {/*<img src={awsBadge} alt="AWS Certified Badge" width="120" height="120"/>height*/}
+              <ul className="list-disc mt-2 flex space-x-2 justify-center">
+                  <li>AWS certified Cloud Practitioner</li>
+                  {/*<li>AWS certified Solutions Architect</li>*/}
+                  {/*<li>AWS certified Security Speciality</li>*/}
+              </ul>
+              <p className="lead mb-5"> {basics.summary}</p>
+              <div className="social-icons">
+                  {allSocial}
+              </div>
+          </div>
+      </section>
       )
     }
 }
 
 class Experience extends Component {
-  render() {
-    const experiences = this.props.data.work;
-    const allExperiences = experiences.map((oneJob, index) =>
+    render() {
+        const experiences = this.props.data.work;
+        const allExperiences = experiences.map((oneJob, index) =>
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
         <div className="resume-content">
             <h3 className="mb-0">{oneJob.position}</h3>
