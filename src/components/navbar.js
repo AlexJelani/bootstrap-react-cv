@@ -3,7 +3,7 @@ import jelani from '../assets/img/jelaniprofilepic.jpeg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
-import BootstrapSwitchButton from 'bootstrap-switch-button-react';
+// import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 
 class Navigate extends Component {
     constructor(props) {
