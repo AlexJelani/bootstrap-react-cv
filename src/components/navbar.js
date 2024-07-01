@@ -40,17 +40,17 @@ class Navigate extends Component {
         ));
         return (
             <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <BootstrapSwitchButton
-                    checked={false}
-                    onlabel='Eng'
-                    offlabel='JP'
-                    size="lg"
-                    onstyle="dark"
-                    offstyle="light"
-                    onChange={() => {
-                        this.props.handleSwitch();
-                    }}
-                />
+                {/*<BootstrapSwitchButton*/}
+                {/*    checked={false}*/}
+                {/*    onlabel='Eng'*/}
+                {/*    offlabel='JP'*/}
+                {/*    size="lg"*/}
+                {/*    onstyle="dark"*/}
+                {/*    offstyle="light"*/}
+                {/*    onChange={() => {*/}
+                {/*        this.props.handleSwitch();*/}
+                {/*    }}*/}
+                {/*/>*/}
                 <button className="navbar-brand" onClick={() => scroll.scrollToTop()} style={{ background: 'none', border: 'none', padding: 0 }}>
                     <span className="d-none d-lg-block">
                         <img className="img-fluid img-profile rounded-circle mx-auto mb-2" style={{ cursor: "pointer" }} src={jelani} alt="" />

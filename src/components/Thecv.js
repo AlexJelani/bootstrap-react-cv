@@ -49,8 +49,8 @@ class Basics extends Component {
               {/*<img src={awsBadge} alt="AWS Certified Badge" width="120" height="120"/>*/}
               {/*<img src={awsBadge} alt="AWS Certified Badge" width="120" height="120"/>height*/}
               <ul className="list-disc mt-2 flex space-x-2 justify-center">
-                  <li>AWS certified Cloud Practitioner</li>
-                  {/*<li>AWS certified Solutions Architect</li>*/}
+                  <li style={{color:"black"}}>AWS certified Cloud Practitioner</li>
+                  <li style={{color:"black"}}>Business Japanese Proficiency Test [BJTビジネス日本語能力テスト]</li>
                   {/*<li>AWS certified Security Speciality</li>*/}
               </ul>
               <p className="lead mb-5"> {basics.summary}</p>
