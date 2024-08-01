@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import dataeng from '../assets/info.json'
 import datafin from '../assets/infofin.json'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import 'remixicon/fonts/remixicon.css';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {Container,Row,Col} from 'react-bootstrap';
@@ -131,32 +132,54 @@ class Education extends Component {
 }
 }
 class Interest extends Component {
+
   render() {
     const interests = this.props.data.interests;
-    const interest = interests.map((inter,index) =>
-    <p key={index} className="mb-0">{inter.info}</p>
-    );
-
+    // const interest = interests.map((inter,index) =>
+    // <p key={index} className="mb-0">{inter.info}</p>
+    // );
+      const interestsData = [
+          { title: 'Kubernetes', color: '#ffbb2c', icon: 'ri-server-fill' },
+          { title: 'CI/CD', color: '#5578ff', icon: 'ri-bar-chart-box-line' },
+          { title: 'Programming', color: '#e361ff', icon: 'ri-code-s-slash-line' },
+          { title: 'Databases', color: '#47aeff', icon: 'ri-database-2-line' },
+          { title: 'Automation', color: '#ffa76e', icon: 'ri-gradienter-line' },
+          { title: 'Terraform', color: '#11dbcf', icon: 'ri-terminal-box-fill' },
+          { title: 'GitHub', color: '#b2904f', icon: 'ri-github-fill' },
+          { title: 'AI/ML', color: '#ff5828', icon: 'ri-brain-line' },
+          { title: 'Language', color: '#29cc61', icon: 'ri-translate' },
+          { title: 'Movies', color: '#4233ff', icon: 'ri-movie-line' },
+      ];
     return (
 
-      <div>
-      {interest}
-      </div>
+        // <div>
+        // {/*{interest}*/}
+        // </div>
+        <div className="row">
+            {interestsData.map((interest, index) => (
+                <div key={index} className="col-lg-3 col-md-4 mt-4">
+                    <div className="icon-box">
+                        <i className={interest.icon} style={{color: interest.color, fontSize: '36px'}} ></i>
+                        <h3>{interest.title}</h3>
+                    </div>
+                </div>
+            ))}
+        </div>
 
     );
-  
-}
+
+  }
 }
 
 class Skill extends Component {
-  //      <FontAwesomeIcon className={"hovering icon-size"} icon={{prefix: 'fab', iconName: (icon.split(" ")[0]).toLowerCase()}} />
+    //      <FontAwesomeIcon className={"hovering icon-size"} icon={{prefix: 'fab', iconName: (icon.split(" ")[0]).toLowerCase()}} />
 //(icon.split(" ")[0]).toLowerCase()
-  render() {
-    const skills = this.props.data.skills;
+    render() {
+        const skills = this.props.data.skills;
 
-    const allSkills = skills.map((perSkill,index) =>
-    <div key={index}>
-    <h3 className="mb-3">{perSkill.name}</h3>
+        const allSkills = skills.map((perSkill, index) =>
+                <div key={index}>
+                    <h3 className="mb-3">{perSkill.name}</h3>
     <div className="subheading mb-3 colorized">{perSkill.level}</div>
     <Container className="middle" style={{ paddingLeft: 0}} >
     <Row className="mb-4 justify-content-md-left">
