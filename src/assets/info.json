@@ -7,36 +7,107 @@
     "website": "jelanialex.cloud.eng.com",
     "summary": "Cloud Engineer/Architect with a passion for Cloud Security and Web Security. I enjoy learning about cloud platforms such as AWS, Azure, and Google Cloud. I specialize in optimizing performance, ensuring scalability, and enhancing security for diverse applications. Skilled in building infrastructure using cloud services and dedicated to continuous learning and improvement.",
     "location": "Aichi, Japan",
-    "profiles": [{
-      "network": "linkedin",
-      "username": "example",
-      "url": "https://www.linkedin.com/in/example"
-    },{"network": "github",
-      "username": "example",
-      "url": "https://github.com/example"
-    }]
-
+    "profiles": [
+      {
+        "network": "linkedin",
+        "username": "example",
+        "url": "https://www.linkedin.com/in/example"
+      },
+      {
+        "network": "github",
+        "username": "example",
+        "url": "https://github.com/example"
+      }
+    ]
   },
-  "work": [{
-    "company": "Cloud Resume Challenge",
-    "position": "Part time Student",
-    "website": "https://alexander-jelani.clouddev.com",
-    "startDate": "2024-09",
-    "endDate": "Present",
-    "summary": "Technologies used: AWS S3 Bucket, Route 53, Cloudfront, Certificate Manager, API Gateway, Lambda function, Dynamo DB.",
-    "viewLive": {
-      "title": "View Live",
-      "url": "https://live-link-url.com"
+  "education": [
+    {
+      "institution": "Coursera",
+      "area": "AWS Cloud Computing",
+      "studyType": "Online Course",
+      "startDate": "2023-03",
+      "endDate": "2023-05",
+      "info": "Completed a specialized course on AWS Cloud Computing offered by Coursera. Learned essential AWS services, including EC2, S3, RDS, and Lambda."
     },
-    "project": {
-      "title": "Project Source Code - Github",
-      "url": "https://github.com/alexander-jelani/cloud-resume-challenge"
+    {
+      "institution": "Udacity",
+      "area": "Cloud DevOps Engineer Nanodegree",
+      "studyType": "Online Course",
+      "startDate": "2022-11",
+      "endDate": "2023-02",
+      "info": "Focused on deploying and managing applications in the cloud. Covered CI/CD pipelines, Kubernetes, Terraform, and monitoring tools."
     },
-    "blog": {
-      "title": "Blog Post",
-      "url": "https://alexander-jelani.clouddev.com/blog"
+    {
+      "institution": "edX",
+      "area": "Microsoft Azure Fundamentals",
+      "studyType": "Online Course",
+      "startDate": "2021-06",
+      "endDate": "2021-08",
+      "info": "Gained foundational knowledge of Microsoft Azure. Topics included Azure services, workloads, security, and pricing."
+    },
+    {
+      "institution": "Pluralsight",
+      "area": "Google Cloud Platform Fundamentals",
+      "studyType": "Online Course",
+      "startDate": "2020-09",
+      "endDate": "2020-11",
+      "info": "Learned about core Google Cloud Platform services, including Compute Engine, App Engine, Kubernetes Engine, and BigQuery."
     }
-  },
+  ],
+  "interests": [
+    {
+      "name": "Physical activities",
+      "info": "I do example physical."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Finnish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Personal strongest",
+      "keywords": [
+        "Python",
+        "AWS",
+        "react"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Cloud Resume Challenge",
+      "position": "Part time Student",
+      "website": "https://alexander-jelani.clouddev.com",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "summary": "Technologies used: AWS S3 Bucket, Route 53, Cloudfront, Certificate Manager, API Gateway, Lambda function, Dynamo DB.",
+      "viewLive": {
+        "title": "View Live",
+        "url": "https://live-link-url.com"
+      },
+      "project": {
+        "title": "Project Source Code - Github",
+        "url": "https://github.com/alexander-jelani/cloud-resume-challenge"
+      },
+      "blog": {
+        "title": "Blog Post",
+        "url": "https://alexander-jelani.clouddev.com/blog"
+      }
+    },
     {
       "company": "Tech Solutions Inc.",
       "position": "Junior Cloud Engineer",
@@ -76,62 +147,6 @@
         "title": "Internship Experience",
         "url": "https://innovatech.com/blog/internship-experience"
       }
-    }]
-,
-  "education": [{
-    "institution": "Coursera",
-    "area": "AWS Cloud Computing",
-    "studyType": "Online Course",
-    "startDate": "2023-03",
-    "endDate": "2023-05",
-    "info": "Completed a specialized course on AWS Cloud Computing offered by Coursera. Learned essential AWS services, including EC2, S3, RDS, and Lambda."
-  },
-    {
-      "institution": "Udacity",
-      "area": "Cloud DevOps Engineer Nanodegree",
-      "studyType": "Online Course",
-      "startDate": "2022-11",
-      "endDate": "2023-02",
-      "info": "Focused on deploying and managing applications in the cloud. Covered CI/CD pipelines, Kubernetes, Terraform, and monitoring tools."
-    },
-    {
-      "institution": "edX",
-      "area": "Microsoft Azure Fundamentals",
-      "studyType": "Online Course",
-      "startDate": "2021-06",
-      "endDate": "2021-08",
-      "info": "Gained foundational knowledge of Microsoft Azure. Topics included Azure services, workloads, security, and pricing."
-    },
-    {
-      "institution": "Pluralsight",
-      "area": "Google Cloud Platform Fundamentals",
-      "studyType": "Online Course",
-      "startDate": "2020-09",
-      "endDate": "2020-11",
-      "info": "Learned about core Google Cloud Platform services, including Compute Engine, App Engine, Kubernetes Engine, and BigQuery."
-    }],
-  "skills": [{
-    "name": "Programming",
-    "level": "Personal strongest",
-    "keywords": [
-      "Python",
-      "AWS",
-      "react"
-    ]
-  }],
-  "languages": [{
-    "language": "Finnish",
-    "fluency": "Native"
-  },{
-    "language": "English",
-    "fluency": "Fluent"
-  }],
-  "interests": [{
-    "name": "Physical activities",
-    "info": "I do example physical."
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference..."
-  }]
+    }
+  ]
 }
