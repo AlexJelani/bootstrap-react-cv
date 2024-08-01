@@ -134,7 +134,7 @@ class Education extends Component {
 class Interest extends Component {
 
   render() {
-    const interests = this.props.data.interests;
+    // const interests = this.props.data.interests;
     // const interest = interests.map((inter,index) =>
     // <p key={index} className="mb-0">{inter.info}</p>
     // );
